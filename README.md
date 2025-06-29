@@ -12,3 +12,13 @@
 - `cd dotfiles/rpi && ./setup.sh`
 - `ln -s ~/voron/printer.cfg ~/printer_data/config/printer.cfg`
 - `ln -s ~/voron/crowsnest.conf ~/printer_data/config/crowsnest.conf`
+
+## Flash Klipper
+
+```shell
+make menuconfig
+sudo service klipper stop
+lsusb # confirm DFU mode
+make flash FLASH_DEVICE=0483:df11
+ls /dev/serial/by-id # confirm up and running
+```
