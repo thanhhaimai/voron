@@ -22,3 +22,9 @@ lsusb # confirm DFU mode
 make flash FLASH_DEVICE=0483:df11
 ls /dev/serial/by-id # confirm up and running
 ```
+
+# CAN Bus
+
+- Fly SHT-36 V2: https://mellow-3d.github.io/fly-sht36_v2_general.html
+- UTOC: https://mellow-3d.github.io/fly-utoc_general.html
+- Guide: https://canbus.esoterical.online/
